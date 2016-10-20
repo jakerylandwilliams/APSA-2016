@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>APSA 2016</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="./css/reveal.css">
+    <link rel="stylesheet" href="./css/theme/whiteNight.css" id="theme">
+    <!-- <link rel="stylesheet" href="./css/print/pdf.css"> -->
+  </head>
+  
+  <style type="text/css">
+    section { text-align: left; }
+  </style>
+  
+  <body>
+
+    <div class="reveal">
+
+      <div class="slides">
+
+	<section>
+	  <h3>Using Scalable Machine Learning to <br> Understand Violent Collective Action</h3>
+	  <small>
+	    APSA 2016 Annual Meeting &amp; Exhibition <br>
+	    Panel: Coding and Validating Political Event Data <br>
+	    September 1st, 2016
+	  </small>
+	  <br>
+	  <br>
+	  <div style="width: 100%; overflow: hidden;">
+	    <div style="width: 400px; float: left;">
+	      <medium>
+		<a href="http://people.ischool.berkeley.edu/~jakeryland/">Jake Ryland Williams </a><br>
+	      </medium>
+	      <small>
+		Assistant Professor <br>		
+		Department of Information Science <br>
+		College of Computing and Informatics <br>
+		Drexel University
+	      </small>
+	    </div>
+	    <div style="margin-left: 420px;">
+	      <medium>
+		<a href="http://scholar.harvard.edu/janastas">Lefteris Jason Anastasopoulos</a> <br>
+	      </medium>
+	      <small>
+		Assistant Professor <br>
+		School of Public and International Affairs <br>
+		Georgia Informatics Institute <br>
+		University of Georgia, Athens 
+	      </small>
+	    </div>
+	  </div>
+	</section>
+
+	<section>
+	  <h2>Overview</h2>
+	  <li class='fragment'>Focus: Understanding social action through social media text.</li>
+	  <ul>
+	    <li class='fragment'>Why?
+	      <ul>
+		<li class='fragment'>The use of social media has become ubiquitous.</li>
+		<li class='fragment'>Users can record even the most mundane actions.</li>
+		<li class='fragment'>Along with text, may come other important data.</li>
+	      </ul>
+	    </li>
+	  </ul>
+	</section>
+
+	<section>
+	  <h3>Twitter: a grassroots tool for mobilization</h3>
+	  <li class='fragment'>
+	    Traditional mass media requires significant resources to employ.
+	  </li>
+	  <li class='fragment'>
+	    Cheap and accessible, social media has empowered many.
+	  </li>
+	  <br>
+	  <ul>
+	    <li class='fragment'>For those unfamiliar with Twitter:
+	      <ul>
+		<li class='fragment'>Tweets are short (140 character limit) conversational messages.</li>
+		<li class='fragment'>These can be geo-located, allowing for movement tracking.</li>
+		<li class='fragment'>Twitter has a huge user base (more than 300 million active).</li>
+	      </ul>	      
+	    </li>
+	  </ul>
+	</section>
+
+	<section>
+	  <h3>Dataset 1: location-tagged messages</h3>
+	  <ul>	  
+	    <li class='fragment'>The 'PullTweets' database:
+	      <ul>
+		<li class='fragment'>Collected from Twitter's public (spritzer, 1%) API.</li>
+		<li class='fragment'>At the time (2014), over 1% of tweets were geo-tagged.</li>
+		<li class='fragment'>Targeted filtering rendered over 600 million geo-tagged tweets.</li>
+		<li class='fragment'>Data were enriched with polygon tags (country, state, county).</li>
+	      </ul>	  
+	    </li>
+	  </ul>
+	</section>
+
+	<section>
+	  <h3>Tweets</h3>
+	  <div style="height: 800px">
+	    <center>
+	      <img src="./images/tweets.jpg" alt=" " style="width: 90%;max-height: 100%;object-fit: contain;Float: center" />
+	    </center>
+	  </div>
+	</section>
+	
+	<section>
+	  <h3>Dataset 2: space-time tagged events</h3>
+	  <ul>	  
+	    <li class='fragment'>The AP images database:
+	      <ul>
+		<li class='fragment'>A database of news-covered Associate Press images.</li>
+		<li class='fragment'>Images are searchable, tagged by keywords, e.g., 'protest.'</li>
+		<li class='fragment'>Along with captions, the data include space-time tags.</li>
+	      </ul>	  
+	    </li>
+	  </ul>	
+	</section>
+
+	<section>
+	  <h3>AP images</h3>
+	  <div style="height: 800px">
+	    <center>
+	      <img src="./images/barricade.jpg" alt=" " style="width: 45%;max-height: 100%;object-fit: contain;Float: center" />
+	      <br>
+	      <img src="./images/barricade_meta.jpg" alt=" " style="width: 75%;max-height: 100%;object-fit: contain;Float: center" />
+	    </center>
+	  </div>
+	</section>
+
+	<section>
+	  <h3>The language of modern social action</h3>
+
+	  <li class='fragment'>We've gathered 2014 protest times &amp; locations from the AP.</li>
+	  <li class='fragment'>Using these, we've filtered tweets by protest times and locations.</li>
+	  <ul>	  
+	    <li class='fragment'>We code these tweets as representatives of social action types:
+	      <ul>
+		<br>
+	  	<li class='fragment'><b>collective peace</b>, e.g., vigils, trials, singing/chanting;</li>
+	  	<li class='fragment'><b>collective force</b>, e.g., mass-arrests, looting, blockades;</li>
+	  	<li class='fragment'><b>singular peace</b>, e.g., discourse, care, disgust; and</li>
+	  	<li class='fragment'><b>singular force</b>, e.g., physical assault, instigation.</li>
+		<br>
+	      </ul>	  
+	    </li>
+	  </ul>
+	  <li class='fragment'>Language is most often entirely unrelated,</li>
+	  <li class='fragment'>but can represent any number of action types at once.</li>
+	</section>
+
+	<section>
+	  <h3>Examples</h3>
+	    <center>
+	      <img src="./images/example_codes.jpg" alt=" " style="width: 100%;max-height: 100%;object-fit: contain;Float: center" />
+	    </center>
+	</section>
+	
+	<section>
+	  <h3>Methodology</h3>
+	  <li class='fragment'>Task: Classify tweets for action types independently.</li>
+	  <br>
+	  <ul>	  
+	    <li class='fragment'> Algorithm: binary, Naive Bayes (NB) classifiers with enhancements:
+	      <ul>
+		<li class='fragment'>Instead of just words, phrases, e.g., 'tear gas,' employ context.</li>
+		<li class='fragment'>
+		  We decompose NB classifications:<br><br>
+		  <script type="math/tex; mode=display">
+		    f(w_i)\left|\log{\mathcal{L}(w_i|c_\text{pos})} - \log{\mathcal{L}(w_i|c_\text{neg})}\right|
+		  </script><br>
+		  to help answer 'why?'
+		</li>
+	      </ul>
+	    </li>
+	  </ul>
+	  <br><br>
+	  <ul>
+	    <li class='fragment'>We also:
+	      <ul>
+		<li class='fragment'>cluster tweets spatially to track movements of groups, and </li>
+		<li class='fragment'>track time series and look for aberrant signatures. </li>
+	      </ul>
+	    </li>
+	  </ul>
+	</section>
+
+	<section>
+	  <h2>Expected performance</h2>
+	</section>
+	
+	<section>
+	  <h3>In-domain</h3>
+	  <center>
+	    <img src="./images/Tab1.jpg" alt=" " style="width: 100%;max-height: 100%;object-fit: contain;Float: center" />
+	  </center>
+	</section>
+
+	<section>
+	  <h3>Out-of-domain</h3>
+	  <center>
+	    <img src="./images/Tab2.jpg" alt=" " style="width: 100%;max-height: 100%;object-fit: contain;Float: center" />
+	  </center>
+	</section>
+	
+	<section>
+	  <h2>Prototypical applications</h2>
+	</section>
+
+	<section data-external="New York_2.html"> </section>
+	<section data-external="New York.html"> </section>
+	<section data-external="Ferguson.html"> </section>
+	<section data-external="Hong Kong.html"> </section>
+
+	<section>
+	  <h3>Building a real-time application</h3>
+	  <li class='fragment'>Our tweets were collected from the public API over 2014.</li>
+	  <li class='fragment'>Back then, geo-tagging was prevalant (>1% of all tweets).</li>
+	  <ul>
+	    <li class='fragment'>Policy decisions (integration with Foursquare) led to a decline.
+	      <ul>
+		<li class='fragment'>Currently, roughly 0.2% of tweets are geo-tagged.</li>
+		<li class='fragment'>Replaced by soft locations, e.g., San Fransisco, Hawaii.</li>
+	      </ul>
+	    </li>
+	  </ul>
+	</section>
+
+	<section>
+	  <h3>Upcoming challenges</h3>
+	  <li class='fragment'>Coding remaining data and building stronger coding guidelines.</li>
+	  <li class='fragment'>Building explorable, online interactive graphics.</li>
+	  <li class='fragment'>Acquisition of and scaling for larger-stream data.</li>
+	  <li class='fragment'>Re-engaging Twitter's community for geo-location participation.</li>
+	  <li class='fragment'>Collating actions into events.</li>
+	</section>
+
+	<section>
+	  <h3>Questions? Thanks!</h3>
+	  <br>
+	</section>
+
+	<section>
+	  <div style="width: 100%; overflow: hidden;">
+	    <div style="width: 500px; float: left;">
+	      <medium>
+		<a href="http://people.ischool.berkeley.edu/~jakeryland/">Jake Ryland Williams </a><br>
+	      </medium>
+	      <small>
+		Assistant Professor <br>		
+		Department of Information Science <br>
+		College of Computing and Informatics <br>
+		Drexel University
+	      </small>
+	      <img src="./images/jake.jpg" alt=" " style="width: 75%;max-height: 100%;object-fit: contain;Float: center" />
+	    </div>
+	    <div style="margin-left: 520px;">
+	      <medium>
+		<a href="http://scholar.harvard.edu/janastas">Lefteris Jason Anastasopoulos</a> <br>
+	      </medium>
+	      <small>
+		Assistant Professor <br>
+		School of Public and International Affairs <br>
+		Georgia Informatics Institute <br>
+		University of Georgia, Athens 
+	      </small>
+	      <img src="./images/jason.jpg" alt=" " style="width: 80%;max-height: 100%;object-fit: contain;Float: center" />
+	    </div>
+	  </div>
+	</section>	
+		
+      </div>
+
+    </div>
+    
+    <script src="./lib/js/head.min.js"></script>
+    <script src="./js/reveal.js"></script>
+
+    <script>
+
+      Reveal.initialize({
+      history: true,
+      transition: 'none',
+
+      math: {
+      // mathjax: 'http://cdn.mathjax.org/mathjax/latest/MathJax.js',
+      config: 'TeX-AMS_HTML-full'
+      },
+
+      dependencies: [
+      { src: './lib/js/classList.js' },
+      { src: 'plugin/external/external.js', condition: function() { return !!document.querySelector( '[data-external]' ); } },
+      { src: './plugin/math/math.js', async: true }
+      ]
+      });
+
+    </script>
+
+  </body>
+</html>

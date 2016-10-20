@@ -1,0 +1,54 @@
+.
+.
+.
+  "tweet": "What's my favorite color?? Green",
+  "codes": {
+    "singular-peace": 0,
+    "collective-peace": 0,
+    "collective-force": 0,
+    "singular-force": 0
+.
+ "tweet": "#OccupyHK scene in Causeway Bay as of 9pm, 29/9 – tens of thousands here, but incredibly peaceful, quiet even http://t.co/7EHxQpxxBV",
+  "codes": {
+    "singular-peace": 0,
+    "collective-peace": 1,
+    "collective-force": 0,
+    "singular-force": 0
+.
+  "tweet": "Lighting the city on fire, smashing in windows, and violence is not the way to prove your peaceful persona.",
+  "codes": {
+    "singular-peace": 1,
+    "collective-peace": 0,
+    "collective-force": 1,
+    "singular-force": 0
+.
+  "tweet": "@SimretZeru Be careful. But be heard.",
+  "codes": {
+    "singular-peace": 1,
+    "collective-peace": 0,
+    "collective-force": 0,
+    "singular-force": 0
+.
+  "tweet": "I hope they riot. Silent protesting apparently doesn't make much of a scene.",
+  "codes": {
+    "singular-peace": 0,
+    "collective-peace": 1,
+    "collective-force": 1,
+    "singular-force": 1
+.
+  "tweet": "\\\"\\\"LOS ANGELES: 10 Freeway from La Brea backed up for miles after #Ferguson protesters walk onto freeway - @ABC7 http://t.co/oIBHF3a7fy\\\"\\\"",
+  "codes": {
+    "singular-peace": 0,
+    "collective-peace": 0,
+    "collective-force": 1,
+    "singular-force": 0
+.
+  "tweet": "Large protest still moving in #oakland  #Fergsuon",
+  "codes": {
+    "singular-peace": 0,
+    "collective-peace": 1,
+    "collective-force": 1,
+    "singular-force": 0
+.
+.
+.
