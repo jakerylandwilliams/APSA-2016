@@ -1,0 +1,86 @@
+Title: Meta-purpose, design, and analysis of socially-driven systems
+
+Abstract:
+
+The growth and adoption of computation by societies 
+have led to notable changes in how people communicate and mobilize.
+While information sharing and event reporting between individuals
+is facilitated with intention in the design of these systems,
+concurrent advances in theory, tools, and techniques for analysis
+make it possible to automatically cull information from aggregate data.
+
+However, these socio-technical systems are often not designed, or,
+are ill-designed to suit meta-purposes for a variety of reasons
+(e.g., precedent, historical incapability, bottom lines, privacy, etc.).
+
+In this presentation, I will discuss my past and present research,
+and then go into detail on two communities on which I am currently focused
+(Wikimedia and Twitter). I will discuss how
+
+(1) Wikimedia has produced the basis for a phrase-based (idiomatic)
+    machine translation system, and
+
+(2) Twitter's geo-spatial messaging has created a medium for the construction
+    of a live system for monitoring social action.
+
+While demonstrating the methods I have developed to accomplish these goals,
+I will also discuss how each meta-system's limitations
+are ultimately defined by design choices made by curators.
+Time permitting, I will also discuss some preliminary findings
+in my ongoing development of methods for phrase-based text analysis.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#################### text analysis, bag-of-phrases, tools for information processing from unstructured text
+
+The growth and adoption of computation by societies 
+have led to notable changes in how people communicate and mobilize.
+Advances in theory, tools, and techniques for analysis 
+make it possible to automatically cull information from aggregate data 
+from socio-technical information sharing systems. These systems, however, 
+are often not designed with larger purposes, such as these analyses, in mind.
+
+I will discuss the methods I have developed to accomplish the goals of 
+
+(1) creating a phrase-based (idiomatic) machine translation system 
+    (using Wikipedia as a medium), and 
+
+(2) constructing a live system for observing social action 
+    (made possible by Twitter's geo-spatial messaging system).
+
+Time permitting, I will also discuss some preliminary findings
+in my ongoing development of methods for phrase-based text analysis.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+The growth and adoption of computation by societies 
+have led to notable changes in how people communicate and mobilize.
+Advances in theory, tools, and techniques for analysis 
+make it possible to automatically cull information through aggregate data 
+from socio-technical information sharing systems, such as social media outlets. 
+These systems, however, are often not designed with larger purposes, 
+such as these analyses, in mind. I will discuss 
+  1. my ongoing development of machine learning tools  
+     to enhance information processing from unstructured text, 
+  2. ways that I have applied these tools in collaboration 
+     with others for societal good, and 
+  3. larger upcoming projects to 
+       (a) create a phrase-based (idiomatic) machine translation system 
+           (using the Wiktionary as a basis), and 
+       (b) construct a system for real time social action and events monitoring
+           (using Twitter's geo-spatial messaging system).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
